@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 4</title>
+	<meta charset="utf-8" />
+
+    <script type="text/javascript">
+
+        
+
+        function coger_operandos() {
+
+            var operando1 = document.getElementById("operando1").value;
+            var operando2 = document.getElementById("operando2").value;
+
+            //document.writeln(operando1);
+            // document.writeln(operando2);
+
+            var operacion = prompt("Introducir operacion:\nA.-Suma.\nB.-Resta\nC.-Multiplicación.\nD.-División");
+
+
+        }
+        
+    </script>
+
+
+</head>
+<body>
+
+    <h1>TEMA 4</h1>
+    <h3>Ejercicio 4. Cálculo.</h3>
+
+    <form id="formulario" method="post">
+        <br/>
+        Operando1: <input type="text" name="operando1" id="operando1"/>
+        <br/>
+        Operando2: <input type="text" name="operando2" id="operando2"/>
+        <br/>
+        <input type="button" value="Calcular"id="calcular_btn" onclick="coger_operandos();"/>
+
+    </form>
+
+
+
+</body>
+</html>
