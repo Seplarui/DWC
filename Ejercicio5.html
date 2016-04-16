@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <script>
+        /*5. Crea un programa que solicite una cadena de texto y que devuelva el numero de caracteres
+que tiene la cadena y dicha cadena en mayúsculas. El programa dará la posibilidad de volver
+a introducir una cadena o de finalizar la ejecución. Es decir se podría introducir todas las
+cadenas que uno desee.*/
+
+        
+
+        while (cadena != "salir") {
+
+            var cadena = prompt("Introduce una cadena de texto, escribe salir para terminar el programa");
+
+            if (cadena == "salir") {
+                break;
+            } else {
+
+            
+                alert("Número de caracteres\n" + cadena.length+"\n" + "Texto en mayúsculas\n" + cadena.toUpperCase());
+
+            }
+            
+        }
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>
