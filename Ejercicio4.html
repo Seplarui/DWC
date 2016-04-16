@@ -10,14 +10,41 @@
 
         function coger_operandos() {
 
-            var operando1 = document.getElementById("operando1").value;
-            var operando2 = document.getElementById("operando2").value;
+            var operando1 = parseInt(document.getElementById("operando1").value,10);
+            var operando2 = parseInt(document.getElementById("operando2").value,10);
 
-            //document.writeln(operando1);
-            // document.writeln(operando2);
+            if ((isNaN(operando1)) || (isNaN(operando2))) {
 
-            var operacion = prompt("Introducir operacion:\nA.-Suma.\nB.-Resta\nC.-Multiplicación.\nD.-División");
+                alert("No es un número");
 
+            } else {
+
+                var operacion = prompt("Introducir operacion:\nA.-Suma.\nB.-Resta\nC.-Multiplicación.\nD.-División\nE.-Resto División").toLowerCase();
+
+            switch (operacion) {
+
+                case "a":
+                    alert("La suma es: " + (operando1 + operando2));
+                    break;
+                case "b":
+                    alert("La resta es: " + (operando1 - operando2));
+                    break;
+                case "c":
+                    alert("La multiplicación es: " + (operando1 * operando2));
+                    break;
+                case "d":
+                    alert("La división es: " + (operando1 / operando2));
+                    break;
+                case "e":
+                    alert("El resto de la división es: " + (operando1 % operando2));
+                    break;
+                default:
+                    alert("Operación no encontrada");
+                    break;
+
+            }
+            }
+         
 
         }
         
