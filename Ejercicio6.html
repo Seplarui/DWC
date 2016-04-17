@@ -9,9 +9,8 @@
         //Ejercicio 6
 
         cadena = prompt("Introduce una cadena de texto");
-               
         //document.writeln(cadena.replace(, ""));
-        document.writeln("Número de caracteres sin espacios\n");
+        /* document.writeln("Número de caracteres sin espacios\n");
 
         document.writeln(cadena.replace(/ /g, "") + "<br/>" + cadena.replace(/ /g, "").length);
         document.writeln("<br/>");
@@ -20,15 +19,58 @@
         document.writeln(cadena.toLowerCase());
         document.writeln("<br/>");
         document.writeln("La última letra de cada palabra");
-       
+       // document.writeln(cadena.substring(0,cadena.length-1);
+        //document.writeln(cadena.split.(-1));
 
-
+        cadenaar = cadena.split(" ");
         
+        for (var i = 0; i < cadenaar.length; i++) {
 
+            document.writeln("<br/>");
+            document.writeln(cadenaar[i].substring(cadenaar[i].length, cadenaar[i].length-1));
+        }
+        document.writeln("<br/>");
+        document.writeln(cadenaar.reverse());*/
 
+        document.write("<table border=\"1\">");
 
+        document.write("<tr>");
+        document.write("<td>Cadena introducida</td>");
+        document.write("<td>" + cadena + "</td>");
+        document.write("</tr>");
 
+        document.write("<tr>");
+        document.write("<td>Número de carácteres sin espacios</td>");
+        document.write("<td>" + cadena.replace(/ /g, "").length + "</td>");
 
+        document.write("</tr>");
+
+        document.write("<tr>");
+        document.write("<td>Número de palabras</td>");
+        document.write("<td>" + cadena.split(" ").length + "</td>");
+        document.write("</tr>");
+
+        document.write("<tr>");
+        document.write("<td>Todo en minúsculas</td>");
+        document.write("<td>" + cadena.toLowerCase() + "</td>");
+        document.write("</tr>");
+
+        document.write("<tr>");
+        document.write("<td>Última letra de cada palabra</td>");
+
+        cadenarray = cadena.split(" ");
+        document.write("<td>");
+        for (i = 0; i < cadenarray.length; i++) {
+
+            document.write(cadenarray[i].substring(cadenarray[i].length, cadenarray[i].length - 1)+" ");
+        }
+        document.write("</td>");
+
+        document.write("</tr>");
+        document.write("<tr>");
+        document.write("<td>Cadena de texto al revés</td>");
+        document.write("<td>" + cadenarray.reverse() + "</td>");
+        document.write("</table>");
 
     </script>
 </head>
