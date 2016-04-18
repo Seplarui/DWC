@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <script>
+        //7. Realiza un script que pida una cadena de texto y un carácter y te diga cuantas veces aparece dicho carácter en dicha cadena de texto.
+
+        var cadena = prompt("Introduce una cadena de texto");
+        var caracter = prompt("Introduce un carácter");
+        var contador=0;
+        cadenar=cadena.split("");
+        
+        
+        for (var i = 0; i < cadenar.length; i++) {
+
+            if (cadenar[i] == caracter) {
+                
+                contador = contador + 1;
+            }
+
+            
+        }
+        document.writeln("El número de veces que aparece el caracter " + caracter + " es " + contador);
+
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>
