@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+
+        /*8. Realiza un script que muestre la fecha del día en el siguiente formato:
+        Martes: 10/20/2015
+        Y la hora la vaya actualizando cada cinco segundos en el siguiente formato
+        Hora: Hora: 10 Minutos: 24 Segundos: 45 */
+
+        
+
+        var fecha = new Date();
+        var hora = new Date();
+        var diasemana = new Array("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo");
+        document.write(diasemana[fecha.getDay()] + ": " + fecha.getDate() + "/" + (fecha.getMonth() + 1) + "/" + fecha.getFullYear());
+        document.write("<br/>");
+        function tiempo() {
+        document.write("<br/>");
+        t = hora.getHours() + ":" + hora.getMinutes() + ":" + hora.getSeconds();
+        document.write(t);
+}
+
+        setTimeout(tiempo(), 5000);
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
