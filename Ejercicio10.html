@@ -7,16 +7,33 @@
 </head>
 <body>
     <script>
-
         //10. Realiza un script que compruebe si la letra del NIF es correcta o no. El algoritmo que calcula la letra del NIF es el siguiente:
-
+        /*
         letra =  ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"];
 
         dni = prompt("Introduce tu dni");
         letradni = dni % 23;
-        document.writeln("Tu dni completo es: " + dni + letra[letradni]);
+        document.writeln("Tu dni completo es: " + dni + letra[letradni]);*/
 
-      
+        
+
+
+        function letra_dni(num1) {
+
+            letra = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"];
+
+            resto = num1 % 23;
+        
+            document.write(num1 + letra[resto]);
+
+
+        }
+
+        dni = prompt("Introduce tu DNI");
+        letra_dni(dni);
+
+
+
 
 
     </script>
