@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <script>
+
+        function letra_dni(num1) {
+
+            letra = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"];
+
+            resto = num1 % 23;
+
+            document.write(num1 + letra[resto]);
+
+
+        }
+
+        numero = prompt("Introduce DNI");
+        letra_in = numero.substring(1, 0);
+        numero = numero.substring(1,8);
+        //document.write("Letra de inicio " + letra_in);
+        letra_in = letra_in.toUpperCase();
+        //document.write("Letra de inicio " + letra_in);
+
+        numero_inicio = 0;
+
+        switch (letra_in) {
+            case "X":
+                numero_inicio = 0;
+                break;
+            case "Y":
+                numero_inicio = 1;
+                break;
+            case "Z":
+                numero_inicio = 2;
+                break;
+            default:
+                document.write("Letra no válida");
+
+        }
+
+        
+
+        /*if (letra_in = "X") {
+
+            numero_inicio = 0;
+
+        } else if (letra_in = "Y") {
+            numero_inicio = 1;
+        } else if (letra_in = "Z") {
+            numero_inicio = 2;
+        } else {
+            document.writeln("Letra no válida");
+        }*/
+        numero_completo = numero_inicio + numero;
+       // document.write("letra_in" + letra_in);
+        document.write("<br/>");
+        //document.write("numero" + numero);
+        document.write("<br/>");
+        //document.write("número completo"+numero_completo);
+        document.write("<br/>");
+        letra_dni(numero_completo);
+        
+        
+
+
+
+    </script>
+
+</body>
+</html>
