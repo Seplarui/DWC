@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onmousemove="muestraInformacion(event)">
+
+    <script>
+
+        function muestraInformacion(elevento) {
+
+            var evento = elevento || window.event;
+            var coordenadaX = evento.clientX;
+            var coordenadaY = evento.clientY;
+            document.write("Has pulsado el ratón en la posición: " + coordenadaX + " , " + coordenadaY);
+        }
+
+        //document.onclick = muestraInformacion;
+      //  document.onmousemove = muestraInformacion;
+        document.onmouseover = muestraInformacion;
+
+
+
+    </script>
+
+</body>
+</html>
