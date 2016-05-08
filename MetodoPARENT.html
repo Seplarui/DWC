@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"
+            type="text/javascript"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("li.item-a").parent().css("background-color", "red");
+
+        });
+
+
+    </script>
+</head>
+<body>
+    <ul>
+        <li>coches</li>
+        <li>motos</li>
+        <li>Accesorios:
+        <ul>
+            <li class="item-a">ruedas</li>
+            <li>anetnas</li>
+            <li>radiocasettes</li>
+        </ul>
+        </li>
+    </ul>
+
+</body>
+</html>
