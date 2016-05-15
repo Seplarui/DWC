@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        .div1{ width:100px;height:100px;background-color:blue;}
+        .div2{width:100px;height:100px;background-color:red;}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"
+            type="text/javascript"></script>
+
+    <title></title>
+    <script>
+        $(function () {
+            $(".div1").one("click", function () {
+                $("body").append("<p>Click div 1</p>");
+            });
+            $(".div2").bind("click", function () {
+
+                $("body").append("<p>Clicked div 2</p>");
+
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+
+</body>
+</html>
