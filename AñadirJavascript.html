@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        .block {background-color:blue;width:150px;height:70px;margin:10px;}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"
+            type="text/javascript"></script>
+    <script>
+        $(function () {
+            var url = "https://raw.github.com/jquery/jquery-color/master/jquery.color.js";
+            $("#go").click(function ()
+            {
+                $.getScript(url, function ()
+                {
+                    $(".block").animate({ backgroundColor: "rgb(255,180,180)" }, 1000)
+                        .delay(500)
+                        .animate({ backgroundColor: "olive" }, 1000)
+                        .delay(500)
+                        .animate({ backgroundColor: "#00f" }, 1000);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="go">Run</button>
+    <div class="block"></div>
+</body>
+</html>
